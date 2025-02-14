@@ -63,3 +63,11 @@ input[type="reset"], input[type="submit"] {
     padding: 8px;
     cursor: pointer;
 }
+
+input {
+    background-color: #f0f8ff; /* Açık mavi */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+
