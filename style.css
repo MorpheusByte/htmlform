@@ -2,11 +2,16 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Sayfa içeriği uzarsa kaymasını sağlar */
     margin: 0;
 }
+
+html, body {
+    overflow: auto;
+}
+
+
 
 .container {
     text-align: center;
