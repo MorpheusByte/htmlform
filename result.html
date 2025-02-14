@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f9f9f9;
+        }
+        td {
+            background-color: #e5e5ff; /* Açık mavi ton */
+        }
+        td:first-child {
+            background-color: white; /* İlk sütunu beyaz yap */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div id="results"></div>
-    <a href="FormOdev1.html">Back to Form</a>
+    <a href="index.html">Back to Form</a>
     <script>
         const resultList = document.getElementById('results')
         new URLSearchParams(window.location.search).forEach((value, name) => {
@@ -15,5 +45,6 @@
             resultList.append(document.createElement('br'))
         })
     </script>
+
 </body>
 </html>

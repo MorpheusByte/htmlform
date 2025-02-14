@@ -3,73 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)</h1>
-    <form action="result.html" method="get">
-        <fieldset>
-            <legend>Sözleşme Onay</legend>
+    <div class="container">
+        <h1>Ds Formu</h1>
+        
+        <form action="result.html" method="get">
+            <fieldset>
+                <legend>Kişisel Bilgiler</legend>
+    
+                <label for="Soyad">SOYADINIZ</label> 
+                <input type="text" id="Soyad" name="SOYADINIZ: ">
+    
+                <label for="Isım">ADINIZ</label> 
+                <input type="text" id="Isım" name="ADINIZ: ">
+    
+                <label for="trkarakter">TÜRKÇE KARAKTERLER İLE ADINIZ VE SOYADINIZ</label> 
+                <input type="text" id="trkarakter" name="TÜRKÇE KARAKTERLER İLE ADINIZ VE SOYADINIZ: ">
+    
+                <label for="kızlıksoyad">DAHA ÖNCE BAŞKA İSİM KULLANDINIZ MI?(KIZLIK SOYADI, DINI, PROFESYONEL VS.)</label> 
+                <input type="text" id="kızlıksoyad" name="DAHA ÖNCE BAŞKA İSİM KULLANDINIZ MI?(KIZLIK SOYADI, DINI, PROFESYONEL VS.): ">
+    
+                <label for="kızlıksoyad1">EVET İSE, DAHA ÖNCE KULLANDIĞINIZ ADINIZ VE SOYADINIZ</label>
+                <input type="text" id="kızlıksoyad1" name="EVET İSE, DAHA ÖNCE KULLANDIĞINIZ ADINIZ VE SOYADINIZ: ">
 
-            <input type="checkbox" name="Onaylandı" id="onay" value="Sözleşmeyi Onaylıyorum">
-            <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label> <br>
-            <input type="reset" value="Formu Kaydet">
-            <input type="submit" value="Formu Temizle">
-        </fieldset>
-        <fieldset>
-            <legend>Kişisel Bilgiler</legend>
+                <label for="temsil">ADINIZI TEMSIL EDEN TELEKODUNUZ VAR MI?</label>
+                <input type="text" id="temsil" name="ADINIZI TEMSIL EDEN TELEKODUNUZ VAR MI?: ">
 
-            <label for="ID">Form Güvenlik ID</label> <input type="text" id="ID" name="ID" placeholder="asdfgh"> <br>
-            <label for="Isım">Ad</label> <input type="text" id="Isım" name="Isım"> <br>
-            <label for="SoyIsım">Soyad</label> <input type="text" id="SoyIsım" name="SoyIsım"> <br>
-            <label for="Yas">Yaş</label> <input type="text" id="Yas" name="Yas"> <br>
-            <label for="Maıl">Mail Adresi</label> <input type="email" id="Maıl" name="Maıl"> <br>
-            <label for="foto">Fotoğraf Ekle</label> <input type="file" name="foto" id="foto">
-        </fieldset>
-        <fieldset>
-            <legend>Diğer Bilgiler</legend>
-            <h5>Buradaki alanlar Mesleki Deneyi Kapsar</h5> <br>
-            <label for="Sektor">Sektöre Giriş Tarihi</label> <input type="date" name="tarih" id="Sektor"> <br>
-            <label for="deneyim">Sektör Deneyimi</label> 
-            <input type="checkbox" value="1-5 yıl" name="1-5Yıl" id="deneyim1">
-            <label for="deneyim1">1-5 Yıl</label> <br>
-            <input type="checkbox" value="6-10Yıl" name="6-10Yıl" id="deneyim2">
-            <label for="deneyim2">6-10 Yıl</label> <br>
-            <input type="checkbox" value="11-15Yıl" name="11-15Yıl" id="deneyim3">
-            <label for="deneyim3">15-üzeri</label> <br>
-            <input type="checkbox" value="15-üzeri" name="15-üzeri" id="deneyim4">
-            <label for="deneyim4">15-üzeri</label> <br>
-            <label for="diller">Programlama Dilleri</label> <select name="secilen dil" id="diller">
-                <option value="C#">C#</option>
-                <option value="PHP">PHP</option>
-                <option value="Java">Java</option>
-                <option value="JavaScript">JavaScript</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Sözleşme Kopyası</legend>
-            <textarea name="sozlesme" id="sozlesme">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium animi sed ratione velit officia id. Deleniti, nisi autem esse inventore harum blanditiis sunt consectetur! Quos laudantium quod consectetur sunt asperiores similique porro beatae cupiditate! Soluta reprehenderit consectetur obcaecati neque, quia aut totam quod quam blanditiis corrupti magnam temporibus quis?
-            </textarea>
-        </fieldset>
-        <fieldset>
-            <legend>Mail Listesi</legend>
-            <label for="onay">Mail Listesine Katılmak <b>İstiyorum</b></label><input type="radio" name="onayred" id="onay" value="onaylıyorum"> <br>
-            <label for="red">Mail Listesine Katılmak <b>İstemiyorum</b></label><input type="radio" name="onayred" id="red" value="reddediyorum"> <br>
-        </fieldset>
+                <label for="cinsiyet">CINSIYETINIZ</label> 
+                <input type="text" id="cinsiyet" name="CINSIYETINIZ: ">
 
+                <label for="medenihal">MEDENI HALINIZ</label> 
+                <input type="text" id="medenihal" name="MEDENI HALINIZ: ">
 
+                <label for="dogum">DOGUM TARIHINIZ</label> 
+                <input type="text" id="dogum" name="DOGUM TARIHINIZ: ">
+
+                <label for="dogumyeri">DOGDUGUNUZ ILCE, SEHIR, ULKE</label> 
+                <input type="text" id="dogumyeri" name="DOGDUGUNUZ ILCE, SEHIR, ULKE: ">
+
+                <label for="uyruk">UYRUGUNUZ</label> 
+                <input type="text" id="uyruk" name="UYRUGUNUZ : ">
+
+                <label for="vatandas">BASKA VATANDASLIGINIZ VAR MI, VARSA LUTFEN BELIRTINIZ</label> 
+                <input type="text" id="vatandas" name="BASKA VATANDASLIGINIZ VAR MI, VARSA LUTFEN BELIRTINIZ : ">
+
+                <label for="vatandasbaska">VATANDASI OLDUGUNUZ ULKE HARICINDE BASKA BIR ULKEDE IKAMETKAHINIZ VAR MI, VARSA LUTFEN BELIRTINIZ</label> 
+                <input type="text" id="vatandasbaska" name="VATANDASI OLDUGUNUZ ULKE HARICINDE BASKA BIR ULKEDE IKAMETKAHINIZ VAR MI, VARSA LUTFEN BELIRTINIZ : ">
+
+                <label for="tckimlik">TC KIMLIK NUMARANIZ</label> 
+                <input type="text" id="tckimlik" name="TC KIMLIK NUMARANIZ : ">
+
+                <label for="abdkimlik">VARSA, AMERIKAN SOSYAL GUVENLIK NUMARANIZ (SOCIAL SECURITY NUMBER)</label> 
+                <input type="text" id="abdkimlik" name="VARSA, AMERIKAN SOSYAL GUVENLIK NUMARANIZ (SOCIAL SECURITY NUMBER) : ">
 
 
-
-
-
-
-
-
-        <br><br><br><br><br><br><br><br>
-        <input type="reset" value="Reset">
-        <input type="submit" value="Send">
+            </fieldset>
+    
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    
     </form>
 
     
